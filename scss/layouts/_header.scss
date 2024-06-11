@@ -1,0 +1,49 @@
+@import '../partials/variables';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 109px;
+    align-items: center;
+    .logo {
+        img {
+            width: 105px;
+        }
+    }
+
+    .navbar {
+        margin-top: auto;
+        display: flex;
+        gap: 0 50px;
+        height: 52px;
+        
+        ul {
+            display: flex;
+            gap: 0 50px;
+            li {
+                
+                
+                a {
+                    font-size: 1.65rem;
+                    color: $colorBlack;
+                    font-weight: 800;
+                }
+                &:hover {
+                    border-bottom: 3px solid $colorGreen;
+                    a {
+                        color: $colorGreen;
+                    }
+                }
+            }
+            .active {
+                a {
+                    color: $colorGreen;
+                }
+                border-bottom: 3px solid $colorGreen;
+            }
+            @media screen and (max-width: 992px) {
+                display: none;
+            }
+        }
+    }
+}

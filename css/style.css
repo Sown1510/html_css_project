@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 109px;
+  align-items: center;
+}
+.header .logo img {
+  width: 105px;
+}
+.header .navbar {
+  margin-top: auto;
+  display: flex;
+  gap: 0 50px;
+  height: 52px;
+}
+.header .navbar ul {
+  display: flex;
+  gap: 0 50px;
+}
+.header .navbar ul li a {
+  font-size: 1.65rem;
+  color: #2C2C2C;
+  font-weight: 800;
+}
+.header .navbar ul li:hover {
+  border-bottom: 3px solid #46B20F;
+}
+.header .navbar ul li:hover a {
+  color: #46B20F;
+}
+.header .navbar ul .active {
+  border-bottom: 3px solid #46B20F;
+}
+.header .navbar ul .active a {
+  color: #46B20F;
+}
+@media screen and (max-width: 992px) {
+  .header .navbar ul {
+    display: none;
+  }
+}
+
+.section-1 .row {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.section-1 .row .info h1 {
+  font-size: 3.7rem;
+  color: #2C2C2C;
+}
+.section-1 .row .info span {
+  display: block;
+  font-size: 4.3rem;
+  font-weight: 800;
+  color: #2C2C2C;
+  width: 380px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.section-1 .row .info .text {
+  margin-top: 25px;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 400;
+  width: 450px;
+}
+.section-1 .row .decor .box {
+  width: 0.4936305732vw;
+  height: 54vw;
+  height: 708px;
+  width: 775px;
+  border-radius: 15px 0 0 15px;
+  background: #DCFFCA;
+  position: relative;
+}
+.section-1 .row .decor .box span {
+  position: absolute;
+  font-size: 16.5rem;
+  right: -90px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  font-weight: 800;
+  line-height: 100%;
+  color: #216000;
+  opacity: 0.15;
+}
+.section-1 .row .decor .box .image {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  left: -12.4203821656vw;
+  width: 58vw;
+  left: -195px;
+}
+
+/*# sourceMappingURL=style.css.map */

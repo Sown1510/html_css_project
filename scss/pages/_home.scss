@@ -1,0 +1,75 @@
+@import '../partials/variables';
+
+// SECTION 1
+.section-1 {
+    
+    .row {
+        display: flex;
+        align-items: center;
+        // background: rgba($color: #000000, $alpha: .1);
+        position: relative;
+        .info {
+            h1 {
+               font-size:  3.7rem;
+               color: $colorBlack
+            }
+            span {
+                display: block;
+                font-size: 4.3rem;
+                font-weight: 800;
+                color: $colorBlack;
+                width: 380px;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+            .text {
+                margin-top: 25px;
+                font-size: 1.6rem;
+                line-height: 2rem;
+                font-weight: 400;
+                width: 450px;
+            }
+        }
+        .decor {
+            .box {
+                width: (775/1570)+vw;
+                height: 54vw;
+                @if (min-width: 1570px) {
+                    height: 708px;
+                    width: 775px;
+                }
+                border-radius: 15px 0 0 15px;
+                // width: 58vw;
+                // height: 65vw;
+                // max-width: 708px;
+                // max-height: 775px;
+                background: #DCFFCA;
+                position: relative;
+                span {
+                    position: absolute;
+                    font-size: 16.5rem;
+                    right: -90px;
+                    top: 50%;
+                    transform: translateY(-50%) rotate(90deg);
+                    // @if (min-width: 1220px) {
+                    //     font-size: 16.5rem;
+                    // }
+                    font-weight: 800;
+                    line-height: 100%;
+                    color: #216000;
+                    opacity: 0.15;
+                }
+                .image {
+                    top: 50%;
+                    transform: translateY(-50%);
+                    position: absolute;
+                    left: (-195/1570) * 100vw;
+                    width: 58vw;
+                    @if (min-width: 1570px) {
+                        left: -195px;
+                    }
+                }
+            }
+        }
+    }
+}
