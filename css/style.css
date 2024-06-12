@@ -35,6 +35,15 @@ img {
   height: 109px;
   align-items: center;
 }
+.header::after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  top: 110px;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.363);
+  z-index: 0;
+}
 .header .logo img {
   width: 105px;
 }
@@ -123,6 +132,144 @@ img {
   left: -12.4203821656vw;
   width: 58vw;
   left: -195px;
+}
+
+.section-2 {
+  margin-top: 84px;
+}
+.section-2 .title {
+  text-align: center;
+}
+.section-2 .title h2 {
+  margin: 0 auto;
+  font-size: 3.2rem;
+  width: 558px;
+  font-weight: 800;
+  line-height: 130%;
+}
+.section-2 .title p {
+  margin: 0 auto;
+  margin-top: 24px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 127%;
+  width: 600px;
+}
+.section-2 .content .box-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+.section-2 .content .box-content .box-1 {
+  width: 295px;
+  height: 338px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  background: white;
+}
+.section-2 .content .box-content .box-1 .number {
+  display: block;
+  margin-top: 23px;
+  font-size: 4.3rem;
+  font-weight: 1000;
+}
+.section-2 .content .box-content .box-1 .text {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 154%;
+}
+.section-2 .content .box-content .box-1 .icon {
+  width: 84px;
+  height: 84px;
+  border-radius: 10px;
+  background: #FFF0E7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-2 .content .box-content .box-2 {
+  width: 343px;
+  height: 392px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  background: white;
+  padding: 40px 20px;
+}
+.section-2 .content .box-content .box-2 .number {
+  display: block;
+  margin-top: 23px;
+  font-size: 4.3rem;
+  font-weight: 1000;
+}
+.section-2 .content .box-content .box-2 .text {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 154%;
+}
+.section-2 .content .box-content .box-2 .icon {
+  width: 84px;
+  height: 84px;
+  border-radius: 10px;
+  background: #FFF0E7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F2FFEC;
+}
+.section-2 .content .box-content .box-3 {
+  width: 295px;
+  height: 338px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  background: white;
+}
+.section-2 .content .box-content .box-3 .number {
+  display: block;
+  margin-top: 23px;
+  font-size: 4.3rem;
+  font-weight: 1000;
+}
+.section-2 .content .box-content .box-3 .text {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 154%;
+}
+.section-2 .content .box-content .box-3 .icon {
+  width: 84px;
+  height: 84px;
+  border-radius: 10px;
+  background: #FFF0E7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-2 .content .box-content .circle-shape-1 {
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  background: #F2FFEC;
+  top: -68px;
+  left: 10px;
+}
+.section-2 .content .box-content .circle-shape-2 {
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  background: #FFF0E7;
+  bottom: -68px;
+  right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

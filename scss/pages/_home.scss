@@ -73,3 +73,108 @@
         }
     }
 }
+
+// SECTION 2
+.section-2 {
+    margin-top: 84px;
+    .title {
+        text-align: center;
+        h2 {
+            margin: 0 auto;
+            font-size: 3.2rem;
+            width: 558px;
+            font-weight: 800;
+            line-height: 130%;
+        }
+        p {
+            margin: 0 auto;
+            margin-top: 24px;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 127%;
+            width: 600px;
+        }
+    }
+    .content {
+        .box-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+            @mixin circle-shape-style {
+                width: 235px;
+                height: 235px;
+                border-radius: 50%;
+                position: absolute;
+                z-index: -1;
+            }
+            @mixin box-style {
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                padding: 20px;
+                background: white;
+                .number {
+                    display: block  ;
+                    margin-top: 23px;
+                    font-size: 4.3rem;
+                    font-weight: 1000;
+                }
+                .text {
+                    margin-top: 24px;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 154%;
+                }
+            }
+            @mixin icon-style {
+                width: 84px;
+                height: 84px;
+                border-radius: 10px;
+                background: $colorOrange100;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .box-1 {
+                width: 295px;
+                height: 338px;
+                @include box-style;
+                .icon {
+                    @include icon-style;
+                }
+
+            }
+            .box-2 {
+                width: 343px;
+                height: 392px;
+                @include box-style;
+                padding: 40px 20px;
+                .icon {
+                    @include icon-style;
+                    background:$colorGreen100;
+                }
+            }
+            .box-3 {
+                width: 295px;
+                height: 338px;
+                @include box-style;
+                .icon {
+                    @include icon-style;
+                }
+            }
+            .circle-shape-1 {
+                @include circle-shape-style;
+                background: $colorGreen100;
+                top: -68px;
+                left: 10px;
+            }
+            .circle-shape-2 {
+                @include circle-shape-style;
+                background: $colorOrange100;
+                bottom: -68px;
+                right: 10px;
+            }
+        }
+    }
+}

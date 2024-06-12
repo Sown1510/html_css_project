@@ -5,6 +5,15 @@
     justify-content: space-between;
     height: 109px;
     align-items: center;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        top: 110px;
+        box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.363); 
+        z-index: 0;
+    }
     .logo {
         img {
             width: 105px;
