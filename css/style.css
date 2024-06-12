@@ -251,5 +251,25 @@ img {
   justify-content: center;
   align-items: center;
 }
+.section-2 .content .box-content .circle-shape-1 {
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  background: #F2FFEC;
+  top: -68px;
+  left: 10px;
+}
+.section-2 .content .box-content .circle-shape-2 {
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  background: #FFF0E7;
+  bottom: -68px;
+  right: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */
