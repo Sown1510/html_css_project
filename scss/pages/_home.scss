@@ -163,18 +163,18 @@
                     @include icon-style;
                 }
             }
-            .circle-shape-1 {
-                @include circle-shape-style;
-                background: $colorGreen100;
-                top: -68px;
-                left: 10px;
-            }
-            .circle-shape-2 {
-                @include circle-shape-style;
-                background: $colorOrange100;
-                bottom: -68px;
-                right: 10px;
-            }
+            // .circle-shape-1 {
+            //     @include circle-shape-style;
+            //     background: $colorGreen100;
+            //     top: -68px;
+            //     left: 10px;
+            // }
+            // .circle-shape-2 {
+            //     @include circle-shape-style;
+            //     background: $colorOrange100;
+            //     bottom: -68px;
+            //     right: 10px;
+            // }
         }
     }
 }
