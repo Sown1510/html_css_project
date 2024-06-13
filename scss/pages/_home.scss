@@ -1,4 +1,5 @@
 @import '../partials/variables';
+@import '../partials/mixins';
 
 // SECTION 1
 .section-1 {
@@ -18,7 +19,7 @@
                 font-size: 4.3rem;
                 font-weight: 800;
                 color: $colorBlack;
-                width: 380px;
+                max-width: 380px;
                 line-height: normal;
                 text-transform: uppercase;
             }
@@ -27,7 +28,7 @@
                 font-size: 1.6rem;
                 line-height: 2rem;
                 font-weight: 400;
-                width: 450px;
+                max-width: 450px;
             }
         }
         .decor {
@@ -80,9 +81,10 @@
     .title {
         text-align: center;
         h2 {
+            display: block;
             margin: 0 auto;
             font-size: 3.2rem;
-            width: 558px;
+            max-width: 558px;
             font-weight: 800;
             line-height: 130%;
         }
@@ -92,7 +94,7 @@
             font-size: 1.6rem;
             font-weight: 400;
             line-height: 127%;
-            width: 600px;
+            max-width: 600px;
         }
     }
     .content {
@@ -175,6 +177,248 @@
                 bottom: -68px;
                 right: 10px;
             }
+        }
+    }
+}
+
+//  SECTION 3
+.section-3 {
+    margin-top: 215px;
+    .title {
+        text-align: center;
+        h2 {
+            font-size: 3.2rem;
+            font-weight: 800;
+        }
+    }
+
+    .products {
+        .product-1, .product-4 {
+            @include product-style;
+        }
+        .product-2, .product-5{
+            @include product-style;
+            .image {
+                background: $colorGreen300;
+                @media screen and (max-width: 992px){
+                    background: transparent;
+                }
+            }
+            
+        }
+        .product-3, .product-6{
+            @include product-style;
+        }
+        
+    }
+}
+
+// SECTION 4
+.section-4 {
+    margin-top: 130px;
+    .news {
+        .title {
+            text-align: center;
+            h2 {
+                font-size: 3.2rem;
+                font-weight: 800;
+            }
+            p {
+                margin-top: 23px;
+                margin: 0 auto; 
+                display: block;
+                font-size: 1.6rem;
+                font-weight: 400;
+                max-width: 655px;
+            }
+        }
+        .news-1 {
+            img {
+                width: 100%;
+            }
+            .desc {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 16px;
+                .title {
+                    color: $colorGreen800;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+                .calendar {
+                    img {
+                        margin-right: 10px;
+                    }
+                    display: flex;
+                    align-items: center;
+                    color: $colorGray500;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    align-content: center;
+                }
+            }
+            .heading {
+                margin-top: 16px;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            .text {
+                margin-top: 16px;
+                font-size: 1.6rem;
+                font-weight: 400;
+            }
+        }
+    }
+    .more {
+        margin-top: 80px;
+        cursor: pointer;
+        a {
+            text-align: center;
+            margin: 0 auto;
+            width: fit-content;
+            padding: 12px 22px;
+            display: flex;
+            justify-content: center;
+            border: 1px solid $colorGreen800;
+            border-radius: 6px;
+            i {
+                height: 24px;
+            }
+        }
+    }
+}
+
+// SECTION 5
+.section-5 {
+    .heading {
+        margin-top: 100px;
+        text-align: center;
+        h2 {
+            margin: 0 auto;
+            max-width: 395px;
+            font-size: 3.2rem;
+            font-weight: 800;
+        }
+        p {
+            margin: 0 auto;
+            margin-top: 24px;
+            max-width: 500px;
+            font-size: 1.6rem;
+            font-weight: 400;
+        }
+    }
+    .content {
+        margin-top: 50px;
+        background: white;
+        border-radius: 6px;
+        .image {
+            img{
+                width: 100%;
+            }
+        }
+        .title {
+            padding: 25px 28px;
+            height: 165px;
+            h3 {
+                color: $colorOrange700;
+                font-size: 2rem;
+                font-weight: 600;
+                text-shadow: 0px 3.333px 3.333px rgba(0, 0, 0, 0.25);
+            }
+            p {
+                margin-top: 10px;
+                font-size: 1.6rem;
+                font-weight: 400;
+            }
+        }
+    }
+    .background {
+        height: 360px;
+        max-width: 100vw;
+        background: $colorOrange100;
+        position: relative;
+        top: -300px;
+        z-index: -1;
+    }
+}
+
+// SECTION 6
+.section-6 {
+    .content {
+        margin-top: -130px;
+        @media screen and (max-width: 992px){
+            margin-top: 0;
+        }
+        .box {
+            display: flex;
+            gap:0 16px;
+            justify-content: center;
+            .title {
+                max-width: 217px;
+                h3 {
+                    font-size: 2.3rem;
+                    font-weight: 600;
+                }
+                p {
+                    margin-top: 6px;
+                    font-size: 1.7rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+// SECTION 7
+.section-7 {
+    margin-top: 110px;
+    .row {
+        display: flex;
+        align-items: center;
+    }
+    .heading {
+        max-width: 360px;
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+    form {
+        margin-top: 26px;
+        #name {
+            @include input-style;
+        }
+        .email-phone {
+            margin-top: 22px;
+            display: flex;
+            gap: 18px;
+            #email {
+                @include input-style;
+                width: 50%;
+            }
+            #phone-number {
+                @include input-style;
+                width: 50%;
+
+            }
+        }
+        #message {
+            margin-top: 22px;
+            height: 150px;
+            @include input-style;
+            resize: none;
+        }
+        button {
+            margin-top: 26px;
+            padding: 13px 12px;
+            width: 105px;
+            background: $colorGreen800;
+            color: white;
+            font-size: 1.7rem;
+            font-weight: 700;
+            float: right;
+            border-radius: 6px;
+            border: none;
         }
     }
 }

@@ -38,17 +38,17 @@
                     font-weight: 800;
                 }
                 &:hover {
-                    border-bottom: 3px solid $colorGreen;
+                    border-bottom: 3px solid $colorGreen800;
                     a {
-                        color: $colorGreen;
+                        color: $colorGreen800;
                     }
                 }
             }
             .active {
                 a {
-                    color: $colorGreen;
+                    color: $colorGreen800;
                 }
-                border-bottom: 3px solid $colorGreen;
+                border-bottom: 3px solid $colorGreen800;
             }
             @media screen and (max-width: 992px) {
                 display: none;
