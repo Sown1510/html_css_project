@@ -1,0 +1,119 @@
+@import '../partials/variables';
+@import '../partials/mixins';
+
+footer {
+    margin-top: 100px;
+    background: $colorGreen100;
+    padding-top: 66px;
+}
+
+.logo-info {
+    width: 100%;
+    .logo{
+        img {
+            width: 132px;
+        }
+    }
+    .info {
+        margin-top: 25px;
+        max-width: 192px;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}
+
+.home {
+    width: 100%;
+
+    span {
+        @include footer-span-style;
+    }     
+    ul {
+        margin-top: 13px;
+        li {
+            margin-top: 6px;
+            font-size: 1.6rem;
+            font-weight: 400
+        }
+    }
+}
+
+.assist {
+    width: 100%;
+
+    span {
+        @include footer-span-style;
+    } 
+    ul {
+        margin-top: 13px;
+        li {
+            margin-top: 6px;
+            font-size: 1.6rem;
+            font-weight: 400;
+            &:nth-child(2), &:nth-child(3) {
+                font-weight: 600;
+            }
+            display: flex;
+            gap: 10px;
+        }
+    }
+}
+
+.contact {
+    width: 100%;
+
+    span {
+        @include footer-span-style;
+    } 
+    ul {
+        margin-top: 13px;
+        li {
+            margin-top: 6px;
+            font-size: 1.6rem;
+            font-weight: 400;
+            display: flex;
+            gap: 10px;
+        }
+    }
+}
+
+.end-footer {
+    margin-top: 40px;
+    padding: 40px 0;
+    max-width: 975px;
+    border-top: 2px solid $colorGray500;
+    .row {
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+        @media screen and (max-width: 576px) {
+            justify-content: center;
+        }
+    }
+    .socials {
+        display: flex;
+        justify-content: end;
+        @media screen and (max-width: 576px) {
+            justify-content: center;
+        }
+        ul {
+            display: flex;
+            align-items: baseline;
+            gap: 7px;
+            li {
+                a {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                    border-radius: 50%;
+                    background: $colorGreen200;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }   
+    }
+}

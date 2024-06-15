@@ -3,7 +3,7 @@
 
 // SECTION 1
 .section-1 {
-    
+
     .row {
         display: flex;
         align-items: center;
@@ -12,7 +12,8 @@
         .info {
             h1 {
                font-size:  3.7rem;
-               color: $colorBlack
+               color: $colorBlack;
+               display: inline-block;
             }
             span {
                 display: block;
@@ -30,15 +31,18 @@
                 font-weight: 400;
                 max-width: 450px;
             }
+            @media screen and (max-width: 768px){
+                width: fit-content;
+                margin: auto;
+            }
         }
+
         .decor {
             .box {
-                width: (775/1570)+vw;
-                height: 54vw;
-                @if (min-width: 1570px) {
-                    height: 708px;
-                    width: 775px;
-                }
+                width: #{775/1570*100}vw;
+                height: #{708/1570*100}vw;
+                max-width: 775px;
+                max-height: 708px;
                 border-radius: 15px 0 0 15px;
                 // width: 58vw;
                 // height: 65vw;
@@ -46,28 +50,38 @@
                 // max-height: 775px;
                 background: #DCFFCA;
                 position: relative;
+                @media screen and (max-width: 768px){
+                    border-radius: 15px;    
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
                 span {
                     position: absolute;
-                    font-size: 16.5rem;
-                    right: -90px;
+                    font-size: #{165/1570*100}vw;
+                    @media screen and (min-width: 1570px) {
+                        font-size: 16.5rem;
+                        right: -90px;
+                    }
+                    right: #{-90/1570*100}vw;
                     top: 50%;
                     transform: translateY(-50%) rotate(90deg);
-                    // @if (min-width: 1220px) {
-                    //     font-size: 16.5rem;
-                    // }
                     font-weight: 800;
                     line-height: 100%;
                     color: #216000;
                     opacity: 0.15;
+                    @media screen and (max-width: 768px){
+                        
+                    }
                 }
                 .image {
                     top: 50%;
                     transform: translateY(-50%);
                     position: absolute;
-                    left: (-195/1570) * 100vw;
-                    width: 58vw;
-                    @if (min-width: 1570px) {
+                    left: #{-150/1570*100}vw;
+                    width: #{500/1570*100}vw;
+                    @media screen and (min-width: 1570px) {
                         left: -195px;
+                        width: 718px;
                     }
                 }
             }

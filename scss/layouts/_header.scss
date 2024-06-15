@@ -24,7 +24,8 @@
         margin-top: auto;
         display: flex;
         gap: 0 50px;
-        height: 52px;
+        height: 100%;
+        align-items: center;
         
         ul {
             display: flex;
@@ -53,6 +54,38 @@
             @media screen and (max-width: 992px) {
                 display: none;
             }
+        }
+    }
+}
+
+#open-menu {
+    &:checked {
+        ~ .navbar-2 {
+            display: flex;
+        }
+    }
+}
+.navbar-2 {
+    justify-content: center;
+    ul {
+        li {  
+            a {
+                font-size: 1.65rem;
+                color: $colorBlack;
+                font-weight: 800;
+            }
+            &:hover {
+                border-bottom: 3px solid $colorGreen800;
+                a {
+                    color: $colorGreen800;
+                }
+            }
+        }
+        .active {
+            a {
+                color: $colorGreen800;
+            }
+            border-bottom: 3px solid $colorGreen800;
         }
     }
 }
